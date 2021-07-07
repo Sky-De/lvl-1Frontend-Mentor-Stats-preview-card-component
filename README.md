@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Click Here](https://sky-1991-sia.github.io/lvl-1-Frontend-Mentor-Stats-preview-card-component/)
+- Live Site URL: [Click Here](https://sky-1991-sia.github.io/lvl-1Frontend-Mentor-Stats-preview-card-component/)
 
 
 ### Built with
