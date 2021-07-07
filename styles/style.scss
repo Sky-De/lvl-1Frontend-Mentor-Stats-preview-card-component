@@ -1,0 +1,206 @@
+
+// font-family: 'Inter', sans-serif;//400&700
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+// font-family: 'Lexend Deca', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import 'mixins';
+@import 'vars'; 
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(0, 0, 0);
+    color: $white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding: 6rem 1.5rem;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    @include b-t;
+}
+
+picture{
+    @include b-t;
+    position: relative;
+    display: block;
+    height: 100%;
+    &::after{
+    @include b-t;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: hsla(277, 84%, 25%, 0.63);;
+    // background: rgba(80, 17, 122, 0.651);
+}
+}
+
+
+
+.card{
+    @include b;
+    background: $cardBG;
+    text-align: center;
+    main{
+        padding: 2rem 2rem 0 2rem;
+    }
+    &_title{
+        font-size: 0.92rem;
+        font-weight: 400;
+        span{
+            color: $accent;
+        }
+    }
+    &_content{
+        padding: 1rem 0;
+        p{
+            color: $mainP;
+            font-size: 0.95rem;
+            line-height: 1.65rem;
+        }
+        .con_stats{
+            margin-top: 1.5rem;
+            .stats{
+                padding: 1rem;
+                h3{
+                    font-size: 1.5rem;
+                }
+                span{
+                    display: block;
+                    color: $mainP;
+                    font-size: 0.7rem;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    line-height: 2rem;
+                    font-family: 'Lexend Deca', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+
+
+@include min(1250px){
+    body{
+        padding: 1rem 9rem 1rem 9rem;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+    }
+
+    .card{
+        max-height: 445px;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: start;
+        header{
+            width: 48%;
+            picture, picture::after, picture > img{
+              @include b-r;
+             }
+        }
+        main{
+            width: 52%;
+            margin-right: auto;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+        .card_title{
+            margin: 2rem 2rem 0 2rem;
+            font-size: 1.2rem;
+        }
+        .card_content{
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 75%;
+            margin: 1rem 2rem 0 2rem;
+            p{
+                font-size: 0.90rem;
+                letter-spacing: 1px;
+            }
+        }
+        .con_stats{
+            display: flex;
+            justify-content: space-between;
+            // margin-top: 4.5rem;
+            .stats{
+                padding: 0rem;
+                h3{
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                }
+                &:nth-child(3){
+                    margin-right: 17px;
+                }
+                
+                span{
+                    letter-spacing: 2px;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@include min-max(500px,1250px ){
+    body{
+        padding: 5rem 8rem 5 8rem;
+        @include flex-c;
+    }
+    .card{
+        max-width: 800px;
+    }
+    header{
+        height: 500px;
+    }
+    .con_stats{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+.developer-info{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    font-size: 0.7rem;
+    a{
+        color: rgb(173, 171, 4);
+        text-decoration: white;
+        cursor: pointer;
+
+        &:hover{
+            color: rgb(255, 251, 0);
+        }
+    }
+}

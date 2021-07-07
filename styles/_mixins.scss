@@ -1,0 +1,52 @@
+
+
+
+//borderRadius
+@mixin  b {
+    border-radius: $px $px $px $px;
+}
+@mixin  b-t {
+    border-radius: $px $px 0 0;
+}
+@mixin  b-r {
+    border-radius: 0 $px $px 0;
+}
+@mixin  b-l {
+    border-radius: $px 0 0 $px;
+}
+@mixin  b-b {
+    border-radius: 0 0 $px $px;
+}
+
+
+@mixin flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//media Q
+@mixin min($px) {
+    @media only screen and (min-width:$px) {
+
+        @content
+        
+    }
+};
+
+@mixin max($px) {
+    @media only screen and (max-width:$px) {
+
+        @content
+        
+    }
+};
+
+@mixin min-max($px1,$px2) {
+    @media only screen and (min-width:$px1) and (max-width:$px2) {
+
+        @content
+        
+    }
+};
