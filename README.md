@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [click Here](https://www.frontendmentor.io/solutions/sasshtmlresponsive-64Fs58WKP)
 - Live Site URL: [Click Here](https://sky-1991-sia.github.io/lvl-1Frontend-Mentor-Stats-preview-card-component/)
 
 
