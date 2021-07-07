@@ -25,11 +25,14 @@ Users should be able to:
 
 ### Screenshot-mobile
 
-![mobile-preview](https://user-images.githubusercontent.com/79264045/124691753-99938a80-def1-11eb-9834-a5d91ec0bfe5.png)
+![mobile-D](https://user-images.githubusercontent.com/79264045/124700247-a4561b80-df01-11eb-9e3a-2a33c57b9a65.png)
+
 
 ### Screenshot-desktop
 
-![desktop-preview](https://user-images.githubusercontent.com/79264045/124691720-854f8d80-def1-11eb-80fd-fd435aaae531.png)
+![desktop-D](https://user-images.githubusercontent.com/79264045/124700359-da939b00-df01-11eb-9cc3-44df7386813b.png)
+
+
 
 ### Links
 
