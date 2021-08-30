@@ -20,7 +20,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### The challenge
 
 Users should be able to:
-- Designed for 375px and 1440 px
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot-mobile
@@ -43,9 +42,11 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- SASS-CSS
+- CSS custom properties
 - Flexbox
+- CSS Grid
 - Mobile-first workflow
+
 
 
 
